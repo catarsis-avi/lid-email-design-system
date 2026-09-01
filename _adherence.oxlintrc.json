@@ -1,0 +1,138 @@
+{
+  "plugins": [
+    "react",
+    "import"
+  ],
+  "rules": {
+    "react/forbid-elements": [
+      "warn",
+      {
+        "forbid": []
+      }
+    ],
+    "no-restricted-imports": [
+      "warn",
+      {
+        "patterns": []
+      }
+    ],
+    "no-restricted-syntax": [
+      "warn",
+      {
+        "selector": "Literal[value=/#[0-9a-fA-F]{3,8}\\b/]",
+        "message": "Raw hex color — use a design-system color token via var()."
+      },
+      {
+        "selector": "Literal[value=/\\b\\d+px\\b/]",
+        "message": "Raw px value — use a design-system spacing token via var()."
+      },
+      {
+        "selector": "Literal[value=/font-family\\s*:\\s*(?!['\\\"]?(?:DM Sans|Barlow Condensed))/i]",
+        "message": "Font not provided by the design system. Available: DM Sans, Barlow Condensed."
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/index.js"
+      ],
+      "rules": {
+        "no-restricted-imports": "off"
+      }
+    }
+  ],
+  "x-omelette": {
+    "components": {},
+    "tokens": [
+      "--border-hairline",
+      "--email-gutter",
+      "--email-width",
+      "--font-body",
+      "--font-display",
+      "--font-label",
+      "--letterspace-label",
+      "--lh-body",
+      "--lh-tight",
+      "--lid-border-hairline",
+      "--lid-burgundy",
+      "--lid-burgundy-text-on-cream",
+      "--lid-cream",
+      "--lid-cream-text-on-burgundy",
+      "--lid-cream-text-on-navy",
+      "--lid-legal-bg",
+      "--lid-navy",
+      "--lid-navy-text-on-cream",
+      "--radius-button",
+      "--radius-pill",
+      "--size-body",
+      "--size-h1",
+      "--size-h2",
+      "--size-hero-title",
+      "--size-label",
+      "--size-note-title",
+      "--size-small",
+      "--space-lg",
+      "--space-md",
+      "--space-sm",
+      "--space-xl",
+      "--space-xs",
+      "--surface-accent-1",
+      "--surface-accent-2",
+      "--surface-page",
+      "--text-on-accent",
+      "--text-on-cream",
+      "--weight-body",
+      "--weight-display",
+      "--weight-label",
+      "--weight-strong"
+    ],
+    "tokenKinds": {
+      "--lid-cream": "color",
+      "--lid-navy": "color",
+      "--lid-burgundy": "color",
+      "--lid-cream-text-on-navy": "font",
+      "--lid-cream-text-on-burgundy": "font",
+      "--lid-navy-text-on-cream": "font",
+      "--lid-burgundy-text-on-cream": "font",
+      "--lid-border-hairline": "color",
+      "--lid-legal-bg": "color",
+      "--surface-page": "color",
+      "--surface-accent-1": "color",
+      "--surface-accent-2": "color",
+      "--text-on-cream": "font",
+      "--text-on-accent": "font",
+      "--font-display": "font",
+      "--font-body": "font",
+      "--font-label": "font",
+      "--weight-display": "font",
+      "--weight-strong": "font",
+      "--weight-body": "font",
+      "--weight-label": "font",
+      "--size-hero-title": "spacing",
+      "--size-h1": "spacing",
+      "--size-h2": "spacing",
+      "--size-note-title": "spacing",
+      "--size-body": "spacing",
+      "--size-small": "spacing",
+      "--size-label": "spacing",
+      "--lh-tight": "other",
+      "--lh-body": "other",
+      "--letterspace-label": "spacing",
+      "--space-xs": "spacing",
+      "--space-sm": "spacing",
+      "--space-md": "spacing",
+      "--space-lg": "spacing",
+      "--space-xl": "spacing",
+      "--email-width": "spacing",
+      "--email-gutter": "spacing",
+      "--radius-button": "radius",
+      "--radius-pill": "radius",
+      "--border-hairline": "spacing"
+    },
+    "fontFamilies": [
+      "Barlow Condensed",
+      "DM Sans"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+:root{
+--lid-cream:#fdf4e3;
+--lid-navy:#003874;
+--lid-burgundy:#9f334e;
+--lid-cream-text-on-navy:#fdf4e3;
+--lid-cream-text-on-burgundy:#fdf4e3;
+--lid-navy-text-on-cream:#003874;
+--lid-burgundy-text-on-cream:#9f334e;
+--lid-border-hairline:#003874;
+--lid-legal-bg:#f2e6cd;
+--surface-page:var(--lid-cream);
+--surface-accent-1:var(--lid-navy);
+--surface-accent-2:var(--lid-burgundy);
+--text-on-cream:var(--lid-navy);
+--text-on-accent:var(--lid-cream);
+}

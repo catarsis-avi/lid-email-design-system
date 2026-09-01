@@ -1,0 +1,25 @@
+/* Web (Design System tab, previews): loaded via Google Fonts <link> in each card's <head> — no local font files were provided. */
+/* Email: DM Sans / Barlow Condensed are progressive enhancement only. Outlook desktop ignores web fonts entirely and falls back to Arial/Helvetica — every size/weight/line-height below must look correct in that fallback, not just in the branded font. */
+@font-face{font-family:'DM Sans';src:url(https://fonts.gstatic.com/s/dmsans/v14/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K6z9mXg.woff2) format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'DM Sans';src:url(https://fonts.gstatic.com/s/dmsans/v14/rP2Fp2ywxg089UriAWCrDBFmDIRc-nuXQU6H_2rXWFTk.woff2) format('woff2');font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:'DM Sans';src:url(https://fonts.gstatic.com/s/dmsans/v14/rP2Fp2ywxg089UriAWCrDBFmDIRc-nuXBXOH_2rXWFTk.woff2) format('woff2');font-weight:800;font-style:normal;font-display:swap}
+@font-face{font-family:'Barlow Condensed';src:url(https://fonts.gstatic.com/s/barlowcondensed/v12/HTx3L3I-JCGChYJ8VI-L6OO_au7B6xTU3mko.woff2) format('woff2');font-weight:700;font-style:normal;font-display:swap}
+:root{
+--font-display:'DM Sans',Arial,Helvetica,sans-serif;
+--font-body:'DM Sans',Arial,Helvetica,sans-serif;
+--font-label:'Barlow Condensed','Arial Narrow',sans-serif;
+--weight-display:800;
+--weight-strong:700;
+--weight-body:400;
+--weight-label:700;
+--size-hero-title:34px;
+--size-h1:28px;
+--size-h2:22px;
+--size-note-title:20px;
+--size-body:16px;
+--size-small:14px;
+--size-label:13px;
+--lh-tight:1.2; /* @kind other */
+--lh-body:1.55; /* @kind other */
+--letterspace-label:0.06em;
+}

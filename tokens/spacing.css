@@ -1,0 +1,12 @@
+:root{
+--space-xs:8px;
+--space-sm:12px;
+--space-md:20px;
+--space-lg:32px;
+--space-xl:48px;
+--email-width:600px;
+--email-gutter:24px;
+--radius-button:14px;
+--radius-pill:999px;
+--border-hairline:1px;
+}
